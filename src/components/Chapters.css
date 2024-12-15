@@ -1,0 +1,111 @@
+.chapters {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .chapters-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #137934;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chapters-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .chapter-card {
+    background: #a4d893;
+    padding: 20px;
+    border: 4px solid #137934;
+    border-radius: 12px;
+    width: 250px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .chapter-card:hover {
+    background-color: #137934;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chapter-card h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  
+  .chapter-card p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Story Box Styling with Background Image */
+  /* Story Box Styling with Background Image */
+.story-box {
+    background-image: url('D:\Tinker\tinker_world\public\assets\back.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 12px;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    position: relative;
+    opacity: 0.9; /* Slight opacity for a cleaner look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+  }
+  
+  .back-button {
+    background-color: #137934;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .back-button:hover {
+    background-color: #0f5f1a;
+  }
+  
+  .story-content {
+    margin-top: 20px;
+  }
+  
+  .story-line {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    margin: 10px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+  }
+  
+  .story-line:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  
+  .story-line:nth-child(2) {
+    animation-delay: 2.5s;
+  }
+  
+  .story-line:nth-child(3) {
+    animation-delay: 4.5s;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

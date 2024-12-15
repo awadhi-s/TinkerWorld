@@ -1,0 +1,84 @@
+/* src/components/Header.css */
+@import 'pixel-retroui/dist/index.css';
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   /* background-color: #137934; /* Retro green */
+    padding: 10px 20px;
+    color: #fff;
+    font-family: 'PixelatedFont', sans-serif; /* Use a retro font */
+}
+  
+  .title {
+    font-size: 25px;
+    font-family: 'minecraft', cursive;
+    text-align: center;
+    margin: 30px;
+    text-shadow: 2px 2px 0px #ff69b4, 4px 4px 0px #00ff00, 6px 6px 0px #ffff00; /* Retro pixelated effect */
+    animation: moveUp 5s linear infinite, colorCycle 3s infinite; /* Animation for movement and color change */
+  }
+  
+  .nav {
+    display: flex;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+    
+  }
+  
+  .nav-item a {
+    font-family:  'minecraft';
+    text-decoration: none;
+    color: #ff69b4;
+    transition: color 0.3s;
+  }
+  
+  .nav-item a:hover {
+    color: #5355cc;
+    /* Retro hover effect */
+  }
+  
+  /* Animation to move the text upwards */
+  @keyframes moveUp {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-35px); /* Adjust the distance as per your requirement */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation to cycle through colors */
+  @keyframes colorCycle {
+    0% {
+      color: #ff69b4;
+    }
+    25% {
+      color: #00ff00;
+    }
+    50% {
+      color: #ffff00;
+    }
+    75% {
+      color: #00bfff;
+    }
+    100% {
+      color: #ff69b4;
+    }
+  }
+  
